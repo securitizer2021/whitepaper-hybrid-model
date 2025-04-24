@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hybrid Machine Learning & Nelson-Siegel Framework for Yield Curve Forecasting</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 2em; background: #f9f9f9; color: #222; }
+    h1, h2, h3 { color: #21306e; }
+    h1 { font-size: 2.3em; margin-bottom: 0.5em; }
+    h2 { font-size: 1.7em; margin-top: 2em; }
+    h3 { font-size: 1.2em; margin-top: 1.5em; }
+    .section { background: #fff; border-radius: 8px; padding: 1.5em; margin-bottom: 2em; box-shadow: 0 2px 8px #ddd; }
+    ul { margin: 1em 0; }
+    li { margin: 0.5em 0; }
+    .copyright { font-size: 0.9em; color: #888; margin-top: 3em; }
+    .header-logo { text-align: center; margin-bottom: 1em; }
+    .header-logo img { width: 180px; max-width: 95vw; }
+    .contact { margin-top: 2em; font-size: 1.05em; text-align: center; color: #445; }
+    .website { font-size: 1.07em; font-weight: bold; color: #205090; text-decoration: none; display: inline-block; margin: 0.5em 0; }
+    .diagram { margin: 2em 0; }
+    .diagram img { width: 90%; max-width: 600px; display: block; margin: 0 auto; border: 1px solid #ccc; border-radius: 6px; }
+    .note { color: #556; font-size: 1em; padding: 0.7em 1em; border-left: 4px solid #aaa; background: #f3f6fa; margin: 1em 0; }
+  </style>
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "310badfa3adc4af2b47663684ba1e302"}'></script><!-- End Cloudflare Web Analytics -->
+</head>
+<body>
+  <!-- Company Header with Logo and Contact -->
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+    <img alt="Quantum Yield Logo" src="https://quantumyield.ai/logo.jpg" style="height: 60px;"/>
+  </div>
+
+  <h1 style="font-size: 2rem; margin-bottom: 0.25rem;">White Paper: Hybrid Yield Curve Forecasting</h1>
+  <h2 style="font-size: 1.35rem; color: #2277bb; margin-bottom: 0.5rem; font-weight: 700; letter-spacing: 0.02em;">BRIDGING NELSON-SIEGEL & AI</h2>
+  
+  <div class="section">
+    <h2>Overview</h2>
+    <p>
+      In the world of finance, yield curve forecasting plays a crucial role in managing risk, setting strategy, and meeting regulatory requirements. Traditionally, financial institutions have relied on parametric models—like the widely respected Nelson-Siegel (NS) approach—which use a handful of interpretable parameters (β₀, β₁, β₂, λ) to capture the stylized behavior of interest rate curves. These models are prized for their simplicity, transparency, and their strong connection to economic intuition.
+    </p>
+    <p>
+      However, the financial landscape has evolved. The explosion of available data, coupled with rapid market changes, has led to the rise of machine learning (ML) and artificial intelligence (AI). Modern AI models—especially those using techniques like Principal Component Analysis (PCA) for data reduction and Long Short-Term Memory (LSTM) neural networks for time-series forecasting—are capable of detecting complex, nonlinear patterns and adapting to new information with unprecedented accuracy. Yet, these models are often criticized for being “black boxes,” making it hard for stakeholders to understand or control the outputs.
+    </p>
+  
+    <h2>Why Bridge the Gap?</h2>
+    <p>
+      Many organizations face the challenge of transitioning from trusted, regulatory-approved legacy models to new AI-driven frameworks. This transition is often risky and costly, and there is understandable resistance to abandoning the clarity and auditability of parametric models for the opacity of deep learning.
+    </p>
+    <ul>
+      <li><strong>Transparency:</strong> Retain the intuitive, explainable foundation of NS curve models.</li>
+      <li><strong>Flexibility &amp; Power:</strong> Harness the adaptive, high-performance edge of AI and machine learning.</li>
+      <li><strong>Legacy Integration:</strong> Seamlessly map existing parametric or scenario-driven models directly into the AI engine, eliminating duplication and easing regulatory adoption.</li>
+    </ul>
+  
+    <h2>Real-World Applications</h2>
+    <ul>
+      <li><strong>Treasury Management:</strong> Optimize asset-liability strategies and stress testing for banks and insurers.</li>
+      <li><strong>Fixed Income &amp; Portfolio Analytics:</strong> Enhance scenario analysis and regulatory reporting for asset managers.</li>
+      <li><strong>Risk Management:</strong> Align legacy risk models with next-generation AI for robust capital planning.</li>
+      <li><strong>Regulatory Compliance:</strong> Demonstrate clear, auditable connections between traditional models and modern ML techniques.</li>
+    </ul>
+    <p>
+      By empowering users to calibrate yield curve forecasts through familiar NS settings or advanced AI-driven statistical mapping, our platform accelerates digital transformation while preserving institutional know-how. The result: forecasts that are not only powerful and flexible, but also transparent and actionable.
+    </p>
+  
+    <h2>Nelson-Siegel Macro Mapping</h2>
+    <p>
+      The Nelson-Siegel (NS) model describes the shape of the yield curve using a few key numbers (called β₀, β₁, β₂, and λ) for each economic scenario. These numbers control the overall level, slope, and curvature of the curve.
+    </p>
+    <p>
+      In our hybrid approach, we add a new layer: the NS Macro Mapping. This is like a translation table that takes the NS curve settings (β₀, β₁, β₂) and turns them into adjustments (or “shocks”) for important economic factors—such as GDP, inflation (CPI and PCE), the Fed Funds Rate, and the Unemployment Rate.
+    </p>
+    <p>
+      This means you can build scenario curves in a way that matches your economic view or stays true to real historical patterns. Whether you want to create custom, stylized scenarios or rely on actual data, the NS Macro Mapping gives you the flexibility and control to do both—all within the same platform.
+    </p>
+
+    <h2>Statistical vs. Manual Mapping</h2>
+    <p>
+      By default, the NS Macro Mapping is set up using statistics from real historical data. This means the system automatically calculates the best-fit settings for you, and it adjusts itself whether you’re working with daily, weekly, or monthly data.
+    </p>
+    <p>
+      But you’re not locked in—you can take control! If you want to use your own custom settings instead of the automatic ones, just uncheck the “Use Statistical Mapping” box. This makes the table editable, so you can type in your own numbers and design scenario forecasts that are as bold, conservative, or creative as you want.
+    </p>
+
+    <h2>Workflow Summary</h2>
+    <p>
+      By default, the system figures out the best mapping settings for you using real historical data. It does all the heavy lifting—automatically adjusting to fit daily, weekly, or monthly data.
+    </p>
+    <p>
+      But you’re always in the driver’s seat. If you want more control, just uncheck the “Use Statistical Mapping” box. This unlocks the table, so you can type in your own numbers and create forecasts that match your own ideas—whether you want to be extra cautious or try something bold.
+    </p>
+    <p>
+      In short: you can rely on smart, data-based settings to start, but you’re free to jump in and customize anytime you want.
+    </p>
+
+    <h2>Why It Matters</h2>
+    <p>
+      This NS-to-macro mapping gives you an easy way to build scenarios that make sense—not just to computers, but to real people. The system is smart enough to use data and math but also clear enough that you can see exactly what economic assumptions are being made for each scenario.
+    </p>
+    <p>
+      If you’re not a technical expert, you’ll still be able to understand what’s driving the forecast. And if you are an expert, you can tweak the mapping to better fit your view of the market, or to test out extreme “what if” situations.
+    </p>
+    <p>
+      In short: it keeps things transparent, flexible, and useful for everyone.
+    </p>
+
+    <h2>Appendix: Statistical Mapping Calculation Flowchart</h2>
+    <ul>
+      <li>NS Macro Mapping weights are computed by regressing changes in historical NS parameters against the macroeconomic feature set, using the most recent time window and selected data frequency. This allows mapping coefficients to adapt as new data becomes available or as the user switches between daily, weekly, and monthly settings.</li>
+      <li>Principal Component Analysis (PCA) simplifies complex economic data by focusing on the most important factors, making the model easier to use and interpret.</li>
+      <li>LSTM Networks are used to detect patterns in past data, which helps the model predict future trends accurately.</li>
+      <li>Scenario-Based Forecasting simulates different economic situations (e.g., changes in inflation, core PCE, or GDP) to understand their potential effects on interest rates.</li>
+    </ul>
+    <div class="diagram">
+      <!-- You can insert a diagram image here. Example: -->
+      <!-- <img src="hybrid_model_flowchart.png" alt="Hybrid Methodology Flowchart"> -->
+      <div class="diagram">
+        <h3>Hybrid Model Architecture Overview</h3>
+        <img src="hybrid_model_flowchart.png" alt="Flowchart of NS-to-Macro Mapping, PCA, and LSTM Model Integration">
+        <div class="note">Figure: Data flow from user scenario input, through Nelson-Siegel macro mapping, PCA transformation, and LSTM model forecasting.</div>
+      </div>
+
+    <p>
+      This AI-driven forecasting approach, combined with scenario-based modeling and policy shift duration, provides a powerful and flexible tool for financial decision-making. By simulating various economic conditions and considering the gradual impacts of policy changes, it offers valuable insights for investors, policymakers, and analysts, helping them navigate an uncertain economic landscape.
+    </p>
+  </div>
+
+  <!-- Company Footer -->
+  <footer style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #eee; text-align: center; color: #666; font-size: 15px;">
+    <div>
+      Contact: 
+      <a href="mailto:info@quantumyield.ai" style="color: #0077cc; text-decoration: none;">info@quantumyield.ai</a>
+      &nbsp;|&nbsp;
+      <a href="https://quantumyield.ai" target="_blank" style="color: #0077cc; text-decoration: none;">https://quantumyield.ai</a>
+    </div>
+    <div style="margin-top: 6px;">&copy; 2025 Quantum Yield. All rights reserved.</div>
+  </footer>
+</body>
+</html>
